@@ -1,16 +1,11 @@
-name = document.getElementById("name");
-email = document.getElementById("email");
-dob = document.getElementById("dob");
+let name = document.getElementById('name').value;
+let email = document.getElementById('email').value;
+let dob = document.getElementById('dob').value;
+let registrationForm = document.getElementById('registrationForm');
 
-form.addEventListener("submit", function(event) {
-    event.event.preventDefault();
+registrationForm.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    let name = nameinput.value;
 
-    let name = inputName.value;
-    message.textContent = "Welcome, ${name}!";
-});
-
-let submitBtn = document.getElementById("submitbtn");
-submitBtn.addEventListener("click", function() {
-    let name = inputName.value;
-    message.textContent = "Welcome, ${name}!";
+    message.textContent = "Thank you for registering, " + name + "!";
 });
